@@ -6,7 +6,7 @@
     <p>Cohort: <%= student.cohort %></p>
     <p>Instructor(s):
       <% student.instructors.each do |instructor| %>
-        <%= instructor.name %>
+        <%= link_to "#{instructor.name}", "/instructors/#{instructor.id}" %>
       <% end %>
     </p>
   </section>
